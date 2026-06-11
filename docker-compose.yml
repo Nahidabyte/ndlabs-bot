@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  wa-bot:
+    build: .
+    container_name: wa-bot
+    volumes:
+      - ./device:/root/.device
+      - ./data:/root/data
+    environment:
+      - DEVICE_DIR=.device
+      - DB_PATH=wa-bot.db
+    restart: unless-stopped

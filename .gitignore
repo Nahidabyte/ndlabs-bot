@@ -1,0 +1,41 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.so.*
+*.dylib
+*.class
+*.jar
+
+# Test binary
+*.test
+
+# Output
+*.out
+
+# Go modules
+go.sum
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Bot specific
+.device/
+*.db
+*.db-shm
+*.db-wal
+wa-bot.exe
+config.env
+*.log
+
+# Credentials
+credentials.json
+device_*.json
+.history/
